@@ -1,8 +1,14 @@
+import UploadForm from '../upload/UploadForm';
+import UploadAudioFileBox from '../upload/UploadAudioFileBox';
+import '../../css/search.css';
+
 const UploadPage = () => {
     return (
-        <h1>
-            Upload File
-        </h1>
+        <div>
+            <h1 className='center'>Upload File</h1>
+            <UploadForm className='center' />
+            <UploadAudioFileBox className='center' />
+        </div>
     );
 };
 

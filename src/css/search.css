@@ -1,15 +1,91 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#3a3a3a;
+    color: white;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.strong-emphasis {
+    font-weight: bold;
+    font-style: italic;
+}
+
 .center {
     margin: auto;
     text-align: center;
-    width: 80%
+    width: 90%;
+}
+
+.left {
+    float: left;
 }
 
 .right {
+    float: right;
+}
 
+.right-spacing {
+    margin-right: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .row {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.row > div {
+    margin-bottom: 20px; 
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.border {
+    border: 2px;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.borderless {
+    border: 0px !important;
+    border-style: none !important;
+    border-radius: 12px;
+}
+
+.width-45 {
+    width: 45% !important;
+}
+
+.list {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list-item {
+    background-color: #4b4b4b;
+    width: 90%;
+    margin-top: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .navigation-button {

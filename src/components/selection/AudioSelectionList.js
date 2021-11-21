@@ -1,6 +1,12 @@
-const AudioSelectionList = () => {
+import AudioSelectionItem from "./AudioSelectionItem";
+
+const AudioSelectionList = props => {
     return (
-        <div>AudioSelectionList</div>
+        <div className={`${props.className} center borderless list`}>
+            {props.audioList.map(item => (
+                <AudioSelectionItem audioSelection={item} className='center' />
+            ))}
+        </div>
     );
 };
 

@@ -1,6 +1,6 @@
-const SearchParamField = () => {
+const SearchParamField = (props) => {
     return (
-        <div>SearchParamField</div>
+        <div className={`${props.className} border`}>SearchParamField</div>
     );
 };
 
