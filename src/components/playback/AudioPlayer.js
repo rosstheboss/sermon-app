@@ -1,6 +1,6 @@
 const AudioPlayer = () => {
     return (
-        <div></div>
+        <div>Audio Player</div>
     );
 };
 
