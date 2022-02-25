@@ -61,7 +61,7 @@ const SearchPage = props => {
                 <h1 className='center'>{props.title}</h1>
                 <button className='right navigation-button'>Upload</button>
             </div>
-            <AudioPlayer />
+            <AudioPlayer className='center row'/>
             <div className='center row'>
                 <SearchParamField className='width-45' />
                 <Queue className='width-45' />

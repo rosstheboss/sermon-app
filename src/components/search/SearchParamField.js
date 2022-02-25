@@ -1,4 +1,4 @@
-const SearchParamField = (props) => {
+const SearchParamField = props => {
     return (
         <div className={`${props.className} border`}>SearchParamField</div>
     );

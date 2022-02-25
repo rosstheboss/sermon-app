@@ -1,6 +1,6 @@
-const UploadForm = () => {
+const UploadForm = props => {
     return (
-        <div></div>
+        <div>UploadForm</div>
     );
 };
 

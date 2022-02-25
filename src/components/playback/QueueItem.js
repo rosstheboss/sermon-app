@@ -1,4 +1,4 @@
-const QueueItem = () => {
+const QueueItem = props => {
     return (
         <div>QueueItem</div>
     );

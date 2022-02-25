@@ -1,6 +1,6 @@
-const AudioPlayer = () => {
+const AudioPlayer = props => {
     return (
-        <div></div>
+        <div className={`${props.className} border`}>Audio Player</div>
     );
 };
 

@@ -2,7 +2,7 @@ import UploadForm from '../upload/UploadForm';
 import UploadAudioFileBox from '../upload/UploadAudioFileBox';
 import '../../css/search.css';
 
-const UploadPage = () => {
+const UploadPage = props => {
     return (
         <div>
             <h1 className='center'>Upload File</h1>

@@ -1,4 +1,4 @@
-const Queue = (props) => {
+const Queue = props => {
     return (
         <div className={`${props.className} border`}>Queue</div>
     );

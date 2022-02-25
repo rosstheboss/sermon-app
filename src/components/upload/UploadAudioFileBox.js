@@ -1,6 +1,6 @@
-const UploadAudioFileBox = () => {
+const UploadAudioFileBox = props => {
     return (
-        <div></div>
+        <div>UploadAudioFileBox</div>
     );
 };
 
