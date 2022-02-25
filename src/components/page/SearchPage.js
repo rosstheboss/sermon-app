@@ -6,18 +6,18 @@ import '../../css/search.css';
 
 const DUMMY_SERMONS = [
     {
-        id: 1,
+        key: 1,
         title: 'Intro to Romans',
         speaker: {
-            id: 1,
+            key: 1,
             fullName: 'Joe Smith',
         },
         series: {
-            id: 1,
+            key: 1,
             name: 'The Roman Road'
         },
         location: {
-            id: 1,
+            key: 1,
             name: 'First Bible Chapel'
         },
         book: 'Romans',
@@ -28,18 +28,18 @@ const DUMMY_SERMONS = [
         recordingDate: '2021-11-21'
     },
     {
-        id: 2,
+        key: 2,
         title: 'Romans 1 Deep Dive',
         speaker: {
-            id: 2,
+            key: 2,
             fullName: 'Bob Brown',
         },
         series: {
-            id: 1,
+            key: 1,
             name: 'The Roman Road'
         },
         location: {
-            id: 1,
+            key: 1,
             name: 'First Bible Chapel'
         },
         book: 'Romans',
