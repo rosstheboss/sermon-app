@@ -1,6 +1,7 @@
 import DefaultSpeakerImage from '../../images/icons8-user-100.png';
 import PlayButtonImage from '../../images/icons8-play-button-circled-30.png';
 import PlusButtonImage from '../../images/icons8-plus-+-30.png';
+import { useAddToQueueList } from '../context/QueueContext';
 
 const GetTitleText = (series, title) => {
     let titleText = '';
@@ -70,9 +71,14 @@ const OnPlayButtonClicked = (audioSelectionItem) =>
     console.log(`Play button clicked for "${audioSelectionItem.title}".`);
 };
 
-const OnAddToQueueButtonClicked = (audioSelectionItem) =>
+const OnAddToQueueButtonClicked = (audioSelection, audioSelectionItem) =>
 {
-    console.log(`Add To Queue button clicked for "${audioSelectionItem.title}".`);
+    if(audioSelection && !audioSelection.includes(audioSelectionItem))
+    {
+        audioSelection.push(audioSelectionItem);
+        console.log(`Add To Queue button clicked for "${audioSelectionItem.title}".`);
+    }
+    
 };
 
 const AudioSelectionItem = props => {
@@ -92,7 +98,7 @@ const AudioSelectionItem = props => {
                 <div className='emphasis'>{item.recordingDate}</div>
                 <div className='row center'>
                     <img src={PlayButtonImage} alt='Play' title='Play' onClick={() => OnPlayButtonClicked(item)} />
-                    <img src={PlusButtonImage} alt='Add to Queue' title='Add to Queue' onClick={() => OnAddToQueueButtonClicked(item)} />
+                    <img src={PlusButtonImage} alt='Add to Queue' title='Add to Queue' onClick={() => OnAddToQueueButtonClicked(null, item)} />
                 </div>
             </div>
         </div>
